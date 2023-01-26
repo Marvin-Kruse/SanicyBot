@@ -1,0 +1,9 @@
+{
+    "nodes": [
+        {
+            "host": "IPPPP",
+            "port": 2337,
+            "password": "passwd"
+        }
+    ]
+}

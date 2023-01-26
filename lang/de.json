@@ -1,0 +1,69 @@
+{
+    "handlers": {
+        "youtube_poster": {
+            "lib": {
+                "youtubelogger": {
+                    "sendermessage": "<@{discorduser}> hat ein Youtbe Video veröffentlicht auf dem Kanal: `{videoauthorname}` {SPACE} Mit dem Title: `{title}`"
+                }
+            }
+        }
+    },
+    "events": {
+        "guild": {
+            "interactionCreate": {
+                "noCommand": "Dieser Command existiert nicht!, Bitte versuche einen anderen du kannst die Command unter </help:0> ansehen",
+                "modtrue": "Du benötigst die Berechtigung, den Server zu bearbeiten schreibe den Server Owner an damit er dir die Berechtigung gibt",
+                "botadmin": "Du hast keine berechtigung da zu!"
+            }
+        }
+    },
+    "commands": {
+        "fun": {
+            "tts": {
+                "errorv": "Bitte trete einen Sprachkanal bei damit du dieses Feature benutzen kannst",
+                "reading": "Bitte warte einen moment die Daten werden überprüft!",
+                "editreading": "<a:volume:1041344482131578942> TTS gestartet"
+            }
+        },
+        "info": {
+            "help": {}
+        },
+        "music": {
+            "play": {
+                "noVoiceChannel": "Du bist in keinen Voice Channel  Kleiner Tipp: **{CLIENT_USER_NAME}** kann übers Web Interface einen Music Setup erstellen",
+                "MusicSearchError": "Beim suchen ist ein fehler aufgetreten, Bitte betrete unseren [Support Discord Server](https://discord.gg/jexdGcBauP). Und erstelle ein Support Ticket damit wir die Bugs so schnell wie möglich beheben können",
+                "MusicNoMatches": "Auf deine Such Anfrage haben wir keine Ergebnisse finden können. Wenn du keine URL angegeben hast, Gibe bitte beim nächsten mal eine Spotify oder SoundCloud URL ein",
+                "MusicPlayMessage": "Ich spiele jetzt Musik in {MUSIC_CHANNEL_NAME}, Gespielt / Hinzugefügt wird: "
+            },
+            "skip": {
+                "SkipNoToSkip": "Hey du, du versuchst diesen Command zu nutzen obwohl es keine Weiteren Lieder in der Warteschleife gibt, füge ein Lid in die Warteschleife hinzu indem du </play:1027139357569724416>",
+                "SkipNoPlayer": "Aktuell wird kein Lied gespielt, du kannst ganz einfach über denn Befehl: </play:1027139357569724416> Ein Lied Hinzufügen oder besuche doch unser Web Oberfläche um noch schneller Musik zu hören",
+                "SkipMessage": "Das Lied wurde übersprungen, es wird gespielt: {NEW_SKIP_SONG}"
+            },
+            "stop": {
+                "NoPlayer": "Aktuell wird kein Lied gespielt, du kannst ganz einfach über denn Befehl: </play:1027139357569724416> Ein Lied Hinzufügen oder besuche doch unser Web Oberfläche um noch schneller Musik zu hören",
+                "StopMessage": "Die Musik Wurde gestoppt, Und ich habe den Voice Channel verlassen du kannst gerne wieder ein Lied starten mit: </play:1027139357569724416>"
+            },
+            "volume": {
+                "NoPlayer": "Aktuell wird kein Lied gespielt, du kannst ganz einfach über denn Befehl: </play:1027139357569724416> Ein Lied Hinzufügen oder besuche doch unser Web Oberfläche um noch schneller Musik zu hören",
+                "wrongvolume": "Du kannst nur eine Zahl zwischen 1 - 100 angeben",
+                "changed": "Die Lautsärke wurde zu {NOW_VOLUME}"
+            }
+        },
+        "moderator": {
+            "languages": {
+                "question": "Wähle die Sprache für dein Server aus",
+                "finished": "Du hast deine neue Sprache für deinen Server ausgewählt"
+            },
+            "yt-poster": {
+                "finished": "Absofort wird in {CHANNEL_ID_POSTER} , von dem Youtube Kanal {YOUTUBE_CHANNEL} die neusten Videos gesendet",
+                "error": "Für deinen Discord Server wurde dieser Youtube Channel bereits installiert in unserem Web Oberfläche kannst du den Youtube Poster "
+            }
+        },
+        "owner": {
+            "slash-reload": {
+                "finished": "fertig Meister"
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "module": {
+        "youtube_poster": {
+            "lib": {
+                "youtubelogger": {
+                    "sendermessage": "<@{discorduser}> posted a Youtbe video on the channel: {videoauthorname} {SPACE} With the Title: `{title}`"
+                }
+            }
+        }
+    },
+    "events": {
+        "guild": {
+            "interactionCreate": {
+                "noCommand": "This command does not exist!, Please try another one you can view the commands at </help:0>.",
+                "modtrue": "You need permission to edit the server write to the server owner so that he gives you permission",
+                "botadmin": "You dont have the rights to do that!"
+            }
+        }
+    },
+    "commands": {
+        "fun": {
+            "tts": {
+                "errorv": "Please join a voice channel so you can use this feature",
+                "reading": "Please wait a moment the data will be checked!",
+                "editreading": "<a:volume:1041344482131578942> TTS started"
+            }
+        },
+        "info": {
+            "help": {}
+        },
+        "music": {
+            "play": {
+                "noVoiceChannel": "You are not in a voice channel **{CLIENT_USER_NAME}** can create a music setup via the web interface.",
+                "MusicSearchError": "An error occurred while searching, please enter our **[Support Discord Server](https://discord.gg/jexdGcBauP)**. And create a support ticket so that we can fix the bugs as soon as possible.",
+                "MusicNoMatches": "We were unable to find any results for your search query. If you did not enter a URL, please enter a Spotify or SoundCloud URL next time.",
+                "MusicPlayMessage": "I am now playing music in {MUSIC_CHANNEL_NAME}, Played / Add: "
+            },
+            "skip": {
+                "SkipNoToSkip": "Hey you, you are trying to use this command although there are no other songs in the queue, add a song to the queue by typing </play:1027139357569724416>",
+                "SkipNoPlayer": "Currently there is no song playing, you can easily add a song using the command: </play:1027139357569724416> to add a song or visit our web interface to listen to music even faster.",
+                "SkipMessage": "The song was skipped, now playing: {NEW_SKIP_SONG}"
+            },
+            "stop": {
+                "NoPlayer": "Currently there is no song playing, you can easily add a song using the command: </play:1027139357569724416> to add a song or visit our web interface to listen to music even faster.",
+                "wrongvolume": "You can only enter a number between 1 - 100",
+                "StopMessage": "The music stopped and I left the voice channel, feel free to start a song again with: </play:1027139357569724416>"
+            },
+            "volume": {
+                "changed": "succesfully change the volume to {NOW_VOLUME}"
+            }
+        },
+        "moderator": {
+            "languages": {
+                "question": "Choose the language for your server",
+                "finished": "You have selected your new language for your server"
+            },
+            "yt-poster": {
+                "finished": "From now on, the latest videos will be broadcast in {CHANNEL_ID_POSTER} from the YouTube channel {YOUTUBE_CHANNEL}"
+            }
+        },
+        "owner": {
+            "slash-reload": {
+                "finished": "finished owner"
+            }
+        }
+    }
+}
